@@ -1,10 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lux stay</title>
+
+        <link
+            rel="shortcut icon"
+            href="./assets/imgs/five-icon.png"
+            type="image/x-icon"
+            sizes="30x30"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body></body>
+    <body>
+        <!-- Start: Header -->
+        <header class="header">
+            <div class="container h-100">
+                <div class="header__container">
+                    <!-- Start: Header Logo -->
+                    <div class="header__logo">
+                        <a href="#">
+                            <svg
+                                version="1.1"
+                                viewBox="0 0 50 50"
+                                class="header__logo-pc-svg"
+                                id="logo-pc"
+                            >
+                                <path
+                                    pid="0"
+                                    d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- Start: Header Logo -->
+
+                    <!-- Start: Header Search -->
+                    <div class="header__search">
+                        <div class="header__search-inputs">
+                            <i
+                                class="fa-solid fa-magnifying-glass header__search-icon"
+                            ></i>
+                            <input
+                                type="text"
+                                placeholder="Tìm kiếm"
+                                class="header__search-input"
+                            />
+                        </div>
+
+                        <div class="header__search-options">
+                            <div class="header__search-options-item">
+                                <i
+                                    class="fa-regular fa-calendar-check header__search-options-icon"
+                                ></i>
+                                Ngày
+                            </div>
+
+                            <div class="header__search-options-item">
+                                <i
+                                    class="fa-solid fa-user header__search-options-icon"
+                                ></i>
+                                Khách hàng
+                            </div>
+                        </div>
+
+                        <div class="header__search-submit">
+                            <button class="header__search-btn">
+                                <i
+                                    class="fa-solid fa-magnifying-glass header__search-btn-icon"
+                                ></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Start: Header Search -->
+
+                    <!-- Start: Header Navigation -->
+                    <div class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="#!" class="header__nav-link">
+                                    Guide
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#!" class="header__nav-link host">
+                                    Host
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#!" class="header__nav-link">
+                                    Đăng ký
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#!" class="header__nav-link">
+                                    Đăng nhập
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <div class="header__nav-language">
+                                    <img
+                                        src="./assets/imgs/vi.svg"
+                                        alt=""
+                                        class="header__nav-language-img"
+                                    />
+                                    <span class="header__nav-language-name"
+                                        >VND</span
+                                    >
+                                    <i
+                                        class="fa-solid fa-caret-down header__nav-language-icon"
+                                    ></i>
+                                </div>
+
+                                <div class="change-language">
+                                    <div class="change__language-container">
+                                        <ul class="change__language-list">
+                                            <li class="change__language-item">
+                                                <div
+                                                    class="change__language-wrapper"
+                                                >
+                                                    <img
+                                                        src="./assets/imgs/vi.svg"
+                                                        alt=""
+                                                        class="header__nav-language-img"
+                                                    />
+                                                    <span
+                                                        class="change__language-name"
+                                                    >
+                                                        Tiếng Việt
+                                                    </span>
+                                                    <i
+                                                        class="fa-solid fa-check"
+                                                    ></i>
+                                                </div>
+                                            </li>
+
+                                            <li class="change__language-item">
+                                                <div
+                                                    class="change__language-wrapper"
+                                                >
+                                                    <img
+                                                        src="./assets/imgs/en.svg"
+                                                        alt=""
+                                                        class="header__nav-language-img"
+                                                    />
+                                                    <span
+                                                        class="change__language-name"
+                                                    >
+                                                        English
+                                                    </span>
+                                                </div>
+                                            </li>
+
+                                            <li class="change__language-item">
+                                                <div
+                                                    class="change__language-wrapper"
+                                                >
+                                                    <img
+                                                        src="./assets/imgs/ko.svg"
+                                                        alt=""
+                                                        class="header__nav-language-img"
+                                                    />
+                                                    <span
+                                                        class="change__language-name"
+                                                    >
+                                                        Korean
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <ul
+                                            class="change__language-list space-line"
+                                        >
+                                            <li class="change__language-item">
+                                                <div
+                                                    class="change__language-wrapper"
+                                                >
+                                                    <strong>VND</strong>
+
+                                                    <span
+                                                        class="change__language-name"
+                                                    >
+                                                        Tiếng Việt
+                                                    </span>
+                                                    <i
+                                                        class="fa-solid fa-check"
+                                                    ></i>
+                                                </div>
+                                            </li>
+
+                                            <li class="change__language-item">
+                                                <div
+                                                    class="change__language-wrapper"
+                                                >
+                                                    <strong>USD</strong>
+
+                                                    <span
+                                                        class="change__language-name"
+                                                    >
+                                                        United States Dollar
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Start: Header Navigation -->
+                </div>
+            </div>
+        </header>
+        <!-- End: Header -->
+
+        <!-- JS -->
+        <script src="./js/main.js"></script>
+    </body>
 </html>
