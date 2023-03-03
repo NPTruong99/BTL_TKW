@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lux stay</title>
 
+        <!-- Favicon -->
         <link
             rel="shortcut icon"
             href="./assets/imgs/five-icon.png"
@@ -13,16 +14,26 @@
             sizes="30x30"
         />
 
+        <!-- Font poppins -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
-
+        <!-- icon -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="./assets/css/slider/owl.carousel.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/css/slider/owl.theme.default.min.css"
         />
         <link rel="stylesheet" href="./assets/css/bootstrap.css" />
         <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -231,7 +242,31 @@
         </header>
         <!-- End: Header -->
 
+        <!-- Start: Main -->
+        <main>
+            <div class="slider">
+                <div class="container">
+                    <div class="owl-carousel owl-theme" id="banner-slider">
+                        <div class="item">
+                            <a href=""
+                                ><img src="./assets/imgs/slider1.png"
+                            /></a>
+                        </div>
+                        <div class="item">
+                            <a href=""
+                                ><img src="./assets/imgs/slider2.png"
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- End: Main -->
+
         <!-- JS -->
+        <script src="./js/slider/jquery.min.js"></script>
+        <script src="./js/slider/owl.carousel.js"></script>
+        <script src="./js/slider/slider.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>
