@@ -389,3 +389,16 @@ strong {
     outline: none;
 }
 /* ==================== End Location ==================== */
+
+/* ==================== Start Promotion ==================== */
+.content__slider {
+    margin-top: 24px;
+}
+
+.content__promotion-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* ==================== End Promotion ==================== */
