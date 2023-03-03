@@ -33,7 +33,7 @@ strong {
     font-weight: 700;
 }
 
-/* ======================================== Start Header ======================================== */
+/* ==================== Start Header ==================== */
 .header {
     position: fixed;
     height: 80px;
@@ -265,9 +265,9 @@ strong {
 .change__language-name {
     padding: 0 12px;
 }
-/* ======================================== End Header ======================================== */
+/* ==================== End Header ==================== */
 
-/* ======================================== Start Slider ======================================== */
+/* ==================== Start Slider ==================== */
 .slider {
     margin-top: 130px;
 }
@@ -287,4 +287,24 @@ strong {
     height: 100%;
     border-radius: 20px;
 }
-/* ======================================== End Slider ======================================== */
+/* ==================== End Slider ==================== */
+
+/* ==================== Start Welcome ==================== */
+.welcome {
+    margin-top: 60px;
+}
+
+.welcome__heading {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.welcome_desc {
+    margin-top: 16px;
+    line-height: 1.8;
+}
+
+.welcome-link:hover {
+    color: var(--primary-color);
+}
+/* ==================== End Welcome ==================== */
