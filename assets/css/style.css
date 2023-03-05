@@ -578,3 +578,68 @@ strong {
     margin-top: 24px;
 }
 /* ==================== End Explore ==================== */
+
+/* ==================== Start Download ==================== */
+.download__app {
+    margin-top: 60px;
+}
+
+.download__app-introduce {
+    width: 50%;
+    padding: 0 16px;
+}
+
+.download__app-logo-svg {
+    width: 345px;
+}
+
+.download__title {
+    margin-top: 12px;
+    margin-bottom: 28px;
+}
+
+.download__subtitle {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.download__app-picture {
+    margin-top: 45px;
+}
+
+.download__app-qrcode {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download__app-qrcode-img {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.download__app-app {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.download__app-store-img {
+    width: 140px;
+}
+
+.download__app-store + .download__app-store {
+    margin-top: 16px;
+}
+
+.download__app-img {
+    width: 50%;
+}
+
+.download__app-by-img {
+    width: 100%;
+}
+/* ==================== End Download ==================== */
