@@ -428,6 +428,12 @@ strong {
 
 .suggest__item {
     position: relative;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.suggest__item:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .suggest__item:hover .suggest__item-image {
@@ -468,7 +474,7 @@ strong {
 
 .suggest__item-data {
     padding: 12px 0;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     min-width: 250px;
     border-radius: 0 0 8px 8px;
 }
@@ -508,5 +514,60 @@ strong {
     text-decoration: underline;
     right: 20;
 }
-
 /* ==================== End Suggest ==================== */
+
+/* ==================== Start Explore ==================== */
+.explore__list {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.explore__item {
+    position: relative;
+    width: calc(33.333% - 11px);
+}
+
+.explore__item:hover .explore__item-img {
+    filter: blur(1px);
+    transform: scale(1.005);
+}
+
+.explore__item-img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.explore__item-name {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(0 0 0 / 23%);
+    border-radius: 50px;
+    padding: 10px 16px;
+
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    text-align: center;
+}
+
+.explore__item-name:hover {
+    background: rgb(0 0 0 / 50%);
+}
+
+.explore__item-desc {
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* ==================== End Explore ==================== */
