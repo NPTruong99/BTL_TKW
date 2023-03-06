@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <main class="main__login">
+            <div class="content">
+                <form action="" method="POST" id="form-1" class="form">
+                    <h1 class="heading">Đăng nhập</h1>
+                    <div class="space"></div>
+
+                    <div class="form-group">
+                        <labe class="form-labe">Email</labe>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="VD: example@domain.com"
+                            class="form-control"
+                        />
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <labe class="form-labe">Mật khẩu</labe>
+                        <input
+                            id="password"
+                            name="password"
+                            type="password"
+                            placeholder="Enter password"
+                            class="form-control"
+                        />
+                        <span class="form-message"></span>
+                    </div>
+
+                    <button class="form-submit">Đăng nhập</button>
+
+                    <p>
+                        Bạn chưa có tài khoản?<a href="./register.html"
+                            >Đăng ký</a
+                        >
+                        ngay
+                    </p>
+                </form>
+            </div>
+        </main>
+
+        <script src="./validator.js"></script>
+        <script>
+            // Output
+            Validator({
+                form: "#form-1",
+                errorSelector: ".form-message",
+                rules: [
+                    Validator.isRequired("#fullname"),
+                    Validator.isRequired("#email"),
+                    Validator.isEmail("#email"),
+                    Validator.isRequired("#password"),
+                    Validator.minLength("#password", 6),
+                    Validator.isRequired("#password_confirmation"),
+                    Validator.isConfirmed(
+                        "#password_confirmation",
+                        function () {
+                            return document.querySelector("#form-1 #password")
+                                .value;
+                        }
+                    ),
+                ],
+                onSubmit: function (data) {
+                    console.log(data);
+                },
+            });
+        </script>
+    </body>
+</html>

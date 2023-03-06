@@ -103,6 +103,10 @@ strong {
     border: none;
 }
 
+.header__search-input:focus {
+    outline: none;
+}
+
 .header__search-options {
     display: flex;
     align-items: center;
@@ -747,5 +751,105 @@ strong {
     margin-top: 20px;
     text-align: center;
 }
-
 /* ==================== End Footer ==================== */
+
+/* Flight */
+
+.control__container {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* ============= Register ================ */
+.main__login,
+.main__register {
+    width: 100vw;
+    background-color: #4158d0;
+    background-image: linear-gradient(
+        43deg,
+        #4158d0 0%,
+        #c850c0 46%,
+        #ffcc70 100%
+    );
+}
+
+.content {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.form {
+    width: 360px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #fff;
+    margin: auto;
+    align-self: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+}
+
+.form .heading {
+    font-weight: 700;
+    font-size: 4rem;
+    color: #dc4298;
+}
+
+.space {
+    margin-top: 70px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group + .form-group {
+    margin-top: 20px;
+}
+
+.form-labe,
+.form-message {
+    text-align: left;
+}
+
+.form-labe {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #000;
+    padding-bottom: 8px;
+}
+
+.form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.form-control:hover {
+    border-color: #1dffba;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-submit {
+    outline: none;
+    border: none;
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 999px;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #dc4298;
+    margin-bottom: 20px;
+}
